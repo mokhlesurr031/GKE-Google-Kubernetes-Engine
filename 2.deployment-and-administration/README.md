@@ -25,7 +25,7 @@ Autopilot:
 Google manages the underlying infrastructure which includes node configuration, auto scaling, auto update, base line security configuration, and networking. The users simple deploy application to GKE, and google takes care of the rest. 
 
 
-2. Standard:
+Standard:
 
 ![GKE Autopilot](../static/5.png)
 Google manages the control plane in a GKE Standard mode while users are responsible for managing the nodes. 
@@ -46,7 +46,7 @@ On the other hand, on a multi-zonal cluster there is still a single replica of c
 A multi-zonal cluster is resilient to zonal failures. 
 
 
-2. Regional Cluster: 
+Regional Cluster: 
 
 
 
