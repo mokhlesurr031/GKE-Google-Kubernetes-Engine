@@ -18,6 +18,7 @@ Two types:
 1. Autopilot
 2. Standard
 
+
 1. Autopilot: 
 
 ![GKE Autopilot](../static/4.png)
@@ -33,6 +34,7 @@ Standard cluster can be created in two way of zone setup:
 
 1. Zonal
 2. Regional
+
 
 1. Zonal Cluster: A zonal cluster is deployed on a single zone. It means it has only one control plane running in a zone. If that particular zone has an outage, cluster resources will also become unavailable. 
 
