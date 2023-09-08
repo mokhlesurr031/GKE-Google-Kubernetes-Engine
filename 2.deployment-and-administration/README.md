@@ -26,7 +26,7 @@ Google manages the underlying infrastructure which includes node configuration, 
 
 2. Standard:
 
-![GKE Autopilot](../static/4.png)
+![GKE Autopilot](../static/5.png)
 Google manages the control plane in a GKE Standard mode while users are responsible for managing the nodes. 
 
 Standard cluster can be created in two way of zone setup:
@@ -45,3 +45,20 @@ A multi-zonal cluster is resilient to zonal failures.
 
 
 2. Regional Cluster: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
