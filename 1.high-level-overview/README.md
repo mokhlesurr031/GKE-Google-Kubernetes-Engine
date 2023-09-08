@@ -15,7 +15,7 @@ Kubernetes cluster consist of a Control Plan and one or more nodes that are also
 The control plan and nodes makes up the kuberneter cluster orchestration system. 
 
 Structure:
-![Kubernetes Structure](static/1.png)
+![Kubernetes Structure](GKE-Google-Kubernetes-Engine/static/1.png)
 
 Control Plan:
 1. c-c-m - (Cloud Controller Manager) - It links the cluster into a cloud provider API and separates out the components that interact with the cloud platform from the component that only interacts with the cluster. 
