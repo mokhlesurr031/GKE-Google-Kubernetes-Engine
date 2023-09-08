@@ -19,8 +19,7 @@ Two types:
 2. Standard
 
 
-
-1. Autopilot: 
+Autopilot: 
 
 ![GKE Autopilot](../static/4.png)
 Google manages the underlying infrastructure which includes node configuration, auto scaling, auto update, base line security configuration, and networking. The users simple deploy application to GKE, and google takes care of the rest. 
@@ -37,9 +36,7 @@ Standard cluster can be created in two way of zone setup:
 2. Regional
 
 
-
-
-1. Zonal Cluster: A zonal cluster is deployed on a single zone. It means it has only one control plane running in a zone. If that particular zone has an outage, cluster resources will also become unavailable. 
+Zonal Cluster: A zonal cluster is deployed on a single zone. It means it has only one control plane running in a zone. If that particular zone has an outage, cluster resources will also become unavailable. 
 
 A zonal cluster can be distributed as single zone or multiple zone. 
 In a signle zonal cluster, there will only be a singple control plane within the same zone for managing the nodes. 
