@@ -59,20 +59,17 @@ Regional vs Zonal Cluster:
 Create GKE using Goocle Cloud Shell/Terminal:
 
 Set cluster zone
-
-$ gcloud config set compute/zone asia-east1-a
+```$ gcloud config set compute/zone asia-east1-a```
 
 Create cluster with custom resource
-
-$ gcloud container clusters create gke-cluster-name --num-nodes=1 --disk-type=pd-standard --disk-size=10
+```$ gcloud container clusters create gke-cluster-name --num-nodes=1 --disk-type=pd-standard --disk-size=10```
 
 Check the cluster if created or not- See list
-
-$ gcloud container clusters list
+```$ gcloud container clusters list```
 
 Current cluster config
+```$ gcloud config list```
 
-$ gcloud config list
 
 ## Kubectl
 A command line tool used to interact with any kubernetes cluster. It is a primary interfqace for managing and deploying applications to Kubernetes. 
