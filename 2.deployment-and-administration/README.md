@@ -60,10 +60,13 @@ Create GKE using Goocle Cloud Shell/Terminal:
 
 Set cluster zone
 $ gcloud config set compute/zone asia-east1-a
+
 Create cluster with custom resource
 $ gcloud container clusters create gke-cluster-name --num-nodes=1 --disk-type=pd-standard --disk-size=10
+
 Check the cluster if created or not- See list
 $ gcloud container clusters list
+
 Current cluster config
 $ gcloud config list
 
