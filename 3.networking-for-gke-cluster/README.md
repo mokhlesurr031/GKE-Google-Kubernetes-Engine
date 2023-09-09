@@ -30,3 +30,24 @@ The port is the entry point where clients reach the application, while the targe
 Private Cluster:
 By default this cluster doesn't allow any direct internet access for nodes and pods. This isolation ensures that the cluster's resources are not directly exposed to the publc internet. In this cluster, nodes are assigned with private IP addresses. 
 
+
+## Creating a private cluster. 
+
+```$ gcloud config set compute/zone us-west1-a```
+
+```$ gcloud container clusters create CLUSTER_NAME --num-nodes=1 --disk-type=pd-standard --disk-size=10 --create-subnetwork name=SUBNET_NAME --enable-ip-alias --enable-private-nodes --enable-private-endpoint --master-ipv4-cird 172.16.0.32/28```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
