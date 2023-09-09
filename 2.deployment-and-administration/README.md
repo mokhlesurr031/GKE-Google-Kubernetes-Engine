@@ -76,17 +76,12 @@ A command line tool used to interact with any kubernetes cluster. It is a primar
 
 To install and setup kubectl, we need to follow certain steps:
 
-$ gcloud components install kubectl / sudo apt install kubectl
-
-$ kubectl version
-
-$ gcloud components install gke-gcloud-auth-plugin / sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
-
-$ gke-gcloud-auth-plugin --version
-
-$ gcloud container clusters get-credentials CLUSTER_NAME --region=COMPUTE_REGION
-
-$ kubectl config view
+```$ gcloud components install kubectl / sudo apt install kubectl```
+```$ kubectl version```
+```$ gcloud components install gke-gcloud-auth-plugin / sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin```
+```$ gke-gcloud-auth-plugin --version```
+```$ gcloud container clusters get-credentials CLUSTER_NAME --region=COMPUTE_REGION```
+```$ kubectl config view```
 
 
 ## GKE Labels
@@ -98,11 +93,9 @@ Label adding guidelines:
 
 Applying Labels:
 
-$ gcloud container clusters describe cluster_name
-
-$ gcloud container clusters update CLUSTER_NAME --update-labels=LABEL_NAME=LABEL_VALUE [Update cluster with a new label]
-
-$ gcloud container clusters update CLUSTER_NAME --remove-labels=LABEL_NAME [Remove labels from cluster]
+```$ gcloud container clusters describe cluster_name```
+```$ gcloud container clusters update CLUSTER_NAME --update-labels=LABEL_NAME=LABEL_VALUE [Update cluster with a new label]```
+```$ gcloud container clusters update CLUSTER_NAME --remove-labels=LABEL_NAME [Remove labels from cluster]```
 
 
 ## GKE Autoscaler
@@ -120,16 +113,16 @@ Key benefits or GKE Autoscaler:
 
 ## Configure cluster autoscaler
 
-$ gcloud container clusters create gke-cluster-name --enable=autoscaling --num-nodes=1 --min-nodes=1 --max-nodes=5 --disk-type=pd-standard --disk-size=10
+```$ gcloud container clusters create gke-cluster-name --enable=autoscaling --num-nodes=1 --min-nodes=1 --max-nodes=5 --disk-type=pd-standard --disk-size=10```
 
 
 ## Upgrading the cluster version
 
-$ gcloud container get-server-config [See all available master and node versions]
+```$ gcloud container get-server-config [See all available master and node versions]```
 
-$ gcloud container clusters upgrade CLUSTER_NAME --master --cluster-version VERSION_TO_UPGRADED_TO [Upgrade the master node]
+```$ gcloud container clusters upgrade CLUSTER_NAME --master --cluster-version VERSION_TO_UPGRADED_TO [Upgrade the master node]```
 
-$ gcloud container clusters upgrade CLUSTER_NAME --node-pool=default-pool --cluster-version=VERSION_TO_BE_UPGRADED_TO [Upgrade the nodepool compatible with master node version]
+```$ gcloud container clusters upgrade CLUSTER_NAME --node-pool=default-pool --cluster-version=VERSION_TO_BE_UPGRADED_TO [Upgrade the nodepool compatible with master node version]```
 
 
 
