@@ -59,15 +59,19 @@ Regional vs Zonal Cluster:
 Create GKE using Goocle Cloud Shell/Terminal:
 
 Set cluster zone
+
 ```$ gcloud config set compute/zone asia-east1-a```
 
 Create cluster with custom resource
+
 ```$ gcloud container clusters create gke-cluster-name --num-nodes=1 --disk-type=pd-standard --disk-size=10```
 
 Check the cluster if created or not- See list
+
 ```$ gcloud container clusters list```
 
 Current cluster config
+
 ```$ gcloud config list```
 
 
@@ -77,10 +81,15 @@ A command line tool used to interact with any kubernetes cluster. It is a primar
 To install and setup kubectl, we need to follow certain steps:
 
 ```$ gcloud components install kubectl / sudo apt install kubectl```
+
 ```$ kubectl version```
+
 ```$ gcloud components install gke-gcloud-auth-plugin / sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin```
+
 ```$ gke-gcloud-auth-plugin --version```
+
 ```$ gcloud container clusters get-credentials CLUSTER_NAME --region=COMPUTE_REGION```
+
 ```$ kubectl config view```
 
 
@@ -94,7 +103,9 @@ Label adding guidelines:
 Applying Labels:
 
 ```$ gcloud container clusters describe cluster_name```
+
 ```$ gcloud container clusters update CLUSTER_NAME --update-labels=LABEL_NAME=LABEL_VALUE [Update cluster with a new label]```
+
 ```$ gcloud container clusters update CLUSTER_NAME --remove-labels=LABEL_NAME [Remove labels from cluster]```
 
 
